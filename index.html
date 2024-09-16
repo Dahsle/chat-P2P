@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#2308f1">
+    <meta name="theme-color"content="#ffffff">
+	<title>Dahsle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#30482e">
+     </head>
+   <body>
+    <div class="header"> 
+    <img src="img.png"alt="Dahsle">  
+	<div class="header-right">
+    <a class="active"href="#home">Home</a> 
+    <a href="#contact">Contact</a>
+    <a href="#soon">Soon</a>
+    <button class="btn-toggle"></span>☀</button>
+     </div>
+  </div>  
+    <div class="footer">
+     <p> © 2024 Dahsle / Made on the Internet.</p>
+  </div>
+   <div class="animated_rainbow_1"> Chat in real time peer-to-peer p2p. </div>
+  <div>
+     <h2 align="center"style="color:LimeGreen">Write “Hello World!” This application will copy and paste any text between computers instantly. Is it true!<Write 
+</h2>
+   </div>
+  </div> 
+   <div>
+   <p class="center">  Open this page in another tab or refresh the page, everything works in your browser, share with friends, write in real time &#128513;
+       <span style="color:#32CD32;"></span><br><span style="color:#32CD32;"></span> <br><br><span style="color:#32CD32;"></span></p>
+   </div>
+  </div>
+</div> 
+    <style> html, body, textarea { width:99.8%; height:68%; padding: 0; margin: 0; }</style>
+<textarea id="paste" placeholder="paste here!"></textarea>
+ <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script><script>
+  gun = Gun(['http://localhost:8765/gun', 'https://gun-manhattan.herokuapp.com/gun']);
+  copy = gun.get('test').get('paste');
+  paste.oninput = () => { copy.put(paste.value) };
+  copy.on((data) => { paste.value = data });
+</script>
+   <script src="script.js"></script>
+  </body>
+</html>
