@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="msapplication-TileColor" content="#2308f1">
     <meta name="theme-color"content="#ffffff">
-      <title>Dahsle</title>
+     <title>Dahsle</title>
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -43,7 +43,7 @@
     <style> html, body, textarea { width:99.8%; height:68%; padding: 0; margin: 0; }</style>
 <textarea id="paste" placeholder="paste here!"></textarea>
  <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script><script>
-  gun = Gun(['http://localhost:8765/gun', 'https://gun-manhattan.herokuapp.com/gun']);
+  gun = Gun(['https://gun-manhattan.herokuapp.com/gun']);
   copy = gun.get('test').get('paste');
   paste.oninput = () => { copy.put(paste.value) };
   copy.on((data) => { paste.value = data });
