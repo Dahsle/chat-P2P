@@ -1,14 +1,14 @@
  
 .header {
   overflow: hidden;
-  background-color: ;
+  background-color: Black ;
   padding: 15px 10px;
 }
 
  
 .header a {
   float: left;
-  color: black;
+  color: Violet  ;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -19,14 +19,14 @@
 
  
 .header a:hover {
-  background-color: #ddd ;
+  background-color:Plum;
   color: black;
 }
 
 
 .header a.active {
-  background-color: dodgerblue;
-  color: white ;
+  background-color:  Violet ;
+  color:  black  ;
 }
 
  
@@ -37,50 +37,9 @@
   * {
   font-family: Arial, Helvetica, sans-serif;
 }
-body {
-  color: #222	;
-  background: #fff;
-}
-
-a {
-  color: #0033cc;
-}
-
  
-body.dark-theme {
-  color:#eee ;
-  background: #121212;
 }
-
-body.dark-theme a {
-  color: #809fff;
-}
-.btn-toggle {
-	display: inline-block;	
-	box-sizing: border-box;
-	padding: 0 3px;
-	margin: 0 10px 10px 0;
-	outline: none;
-	border: 1px solid #fff;
-	border-radius: 50px;
-	height: 45px;
-	line-height: 15px;
-	font-size: 45px;
-	font-weight: 600;
-	text-decoration: none;
-	color: ##00FF00	;
-	background-color: #fff;
-	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
-	cursor: pointer;
-	user-select: none;
-	appearance: none;
-	touch-action: manipulation;  
-	vertical-align: top;
-	transition: box-shadow 0.2s;
-    
-}
-
-.btn-toggle:focus-visible {
+ .btn-toggle:focus-visible {
 	border: 1px solid #4c51f9;
 	outline: none;
 }
@@ -136,27 +95,8 @@ body.dark-theme a {
   color: MidnightBlu;
   text-align: center;
 }
-   [data-tooltip] {
-    position: relative; /* Относительное позиционирование */ 
-   }
-   [data-tooltip]::after {
-    content: attr(data-tooltip); /* Выводим текст */
-    position: absolute; /* Абсолютное позиционирование */
-    width: 300px; /* Ширина подсказки */
-    left: 0; top: 0; /* Положение подсказки */
-    background: #3989c9; /* Синий цвет фона */
-    color: #fff; /* Цвет текста */
-    padding: 0.5em; /* Поля вокруг текста */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
-    pointer-events: none; /* Подсказка */
-    opacity: 0; /* Подсказка невидима */
-    transition: 1s; /* Время появления подсказки */
-   } 
-   [data-tooltip]:hover::after {
-    opacity: 1; /* Показываем подсказку */
-    top: 2em; /* Положение подсказки */
-   }
-   
+
+
     .center {
   text-align: center;
 }
@@ -182,9 +122,82 @@ h1{
     border: 1px solid blue;
 }
   
-  
-   
+  html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000;
 }
- 
 
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: 'after';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background:transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left:0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+  div {
+  text-align: center;
+}
+
+  
   
