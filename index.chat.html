@@ -32,6 +32,10 @@
        <style> html, body, textarea { width:99.8%; height:90%; padding: 0; margin: 0; }</style>
 <textarea id="paste" placeholder="paste here!"></textarea>
  <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script><script>
+ gun = Gun(['http://localhost:8765/gun', 'https://gun-manhattan.herokuapp.com/gun']);
+  copy = gun.get('test').get('paste');
+  paste.oninput = () => { copy.put(paste.value) };
+  copy.on((data) => { paste.value = data });
 </script>
    </body>
 </html>
