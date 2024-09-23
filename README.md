@@ -1,4 +1,4 @@
-![ P2P](https://github.com/user-attachments/assets/c31776ea-0e89-4952-9646-0f8f2637b846)
+ ![ 0](https://github.com/user-attachments/assets/377c9c08-d26a-4d99-978c-8089d5f27e22)
 You can write on the site in real time.
 Instant messages Copyright (c) 2015 Mark Nadal
 read the license on the page  https://github.com/amark/gun?tab=License-1-ov-file 
