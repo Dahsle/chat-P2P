@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#2308f1">
+    <meta name="theme-color"content="#ffffff">
+     <title>Dahsle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#30482e">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="bf8b7a71-4824-442f-a186-cbe8477f51b0"></script>
+ </head>
+   <body>
+    	  <div class="header"> 
+    <img src="img.gif"alt="Dahsle"style="float: left ; margin-right: 15px;">  
+	 <div class="header-right">
+    <a class="active"href="https://chat.dahsle.top/">Home</a> 
+    <a href='https://chat.dahsle.top/soon'>Soon</a>
+    <a href="https://github.com/Dahsle#contact">Contact</a>
+     </div>
+   </div>
+   <div class="animated_rainbow_1">BitTorrent over WebRTC
+   </div>
+</div>  
+  <p style="text-align: center;"></p>
+     <div id="hero">
+      <div id="output">
+        <div id="progressBar"></div>
+        <!-- The video player will be added here -->
+      </div>
+      <!-- Statistics -->
+      <div id="status">
+        <div>
+          <span class="show-leech">Downloading </span>
+          <span class="show-seed">Seeding </span>
+          <code>
+            <!-- Informative link to the torrent file -->
+            <a id="torrentLink" href="https://webtorrent.io/torrents/sintel.torrent">sintel.torrent</a>
+          </code>
+          <span class="show-leech"> from </span>
+          <span class="show-seed"> to </span>
+          <code id="numPeers">0 peers</code>.
+        </div>
+        <div>
+          <code id="downloaded"></code>
+          of <code id="total"></code>
+          — <span id="remaining"></span><br/>
+          &#x2198;<code id="downloadSpeed">0 b/s</code>
+          / &#x2197;<code id="uploadSpeed">0 b/s</code>
+        </div>
+      </div>
+    </div>
+   
+    <div class="footer">
+     <p style="color:Indigo"> © 2024 Dahsle / Made on the Internet.</p>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/webtorrent@latest/webtorrent.min.js"></script>
+
+ 
+    <script src="http://momentjs.com/downloads/moment.min.js"></script>
+  
+     
+ <script src="script.js"></script>
+   </body>
+</html>
