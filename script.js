@@ -1,4 +1,4 @@
-const torrentId = 'https://webtorrent.io/torrents/sintel.torrent'
+        const torrentId = 'https://webtorrent.io/torrents/sintel.torrent'
 
       const client = new WebTorrent()
 
@@ -71,4 +71,4 @@ const torrentId = 'https://webtorrent.io/torrents/sintel.torrent'
         return (neg ? '-' : '') + num + ' ' + unit
       }
     
- 
+
