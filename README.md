@@ -1,4 +1,4 @@
- ![ 0](https://github.com/user-attachments/assets/377c9c08-d26a-4d99-978c-8089d5f27e22)
+![Снимок экрана от 2024-09-28 13-22-35](https://github.com/user-attachments/assets/61287556-6352-4d9c-8ae2-f09408f02d55)
 You can write on the site in real time.
 Instant messages Copyright (c) 2015 Mark Nadal
 read the license at https://github.com/amark/gun?tab=License-1-ov-file
