@@ -244,17 +244,4 @@ body {
    
    
     
-     * {border: 0; margin: 0; padding: 0;}
-a {color: #fff; text-decoration: none;}
-a:focus, a:hover {text-decoration: underline;}
-body, html {background-color: #000; color: #ccc; font-size: 1em; text-align: center;}
-button, input, select, textarea {background-color: #000; border: 1px solid #777; color: #ccc; padding: 0 2px;}
-button:focus, button:hover, input:focus, input:hover, select:focus, select:hover, textarea:focus, textarea:hover {border-color: #fff;}
-label {border: 1px dotted #777; padding: 0 2px; margin-left: 4px;}
-label:hover {border-style: solid;}
-p {margin: 16px;}
-video {border: 1px solid #777; border-radius: 4px; width: 40%;}
-.flex {align-content: center; display: flex; justify-content: center;}
-   
-}
-  
+     
