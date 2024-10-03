@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#2308f1">
+    <meta name="theme-color"content="#ffffff">
+    <title>Dahsle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#30482e">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="b630dc12-e670-475b-b801-7b5b20380ef6"></script>
+  </head>
+   <body>
+    	  <div class="header"> 
+    <img src="img.gif"alt="Dahsle"style="float: left ; margin-right: 15px;">  
+	 <div class="header-right">
+    <a class="active"href=" https://dahsle.top/ ">Home</a> 
+    <a href='https://dahsle.top/webrtc'>WebRTC</a>
+    <a href="#soon">Share screen</a>
+    <a href="#soon">Soon</a>
+    <a href="https://github.com/Dahsle#contact">Contact</a>
+     </div>
+   </div>
+ </div>  
+  <p style="text-align: center;"></p>
+ <h1>getDisplayMedia demo</h1>
+<p>Purpose of this demo is to test all getDisplayMedia API functionalities.</p>
+
+ <br/>
+
+<div class="flex">
+<label for="aspect_ratio">Aspect Ratio:</label><select id="aspect_ratio">
+ <option value="default">Default</option>
+ <option value="1.77">16:9</option>
+ <option value="1.33">4:3</option>
+ <option value="2.35">21:9</option>
+ <option value="1.4">14:10</option>
+ <option value="1.9">19:10</option>
+</select>
+
+<label for="frame_rate">Frame Rate:</label><select id="frame_rate">
+ <option value="default">Default</option>
+ <option>30</option>
+ <option>25</option>
+ <option>15</option>
+ <option>5</option>
+</select>
+
+<label for="resolutions">Resolutions:</label><select id="resolutions">
+ <option value="default">Default</option>
+ <option value="fit-screen">Fit Screen</option>
+ <option>4K</option>
+ <option>1080p</option>
+ <option>720p</option>
+</select>
+
+<label for="cursor">Cursor:</label><select id="cursor">
+ <option value="default">Default</option>
+ <option>always</option>
+ <option>never</option>
+ <option>motion</option>
+</select>
+
+<label for="display_surface">Display Surface:</label><select id="display_surface">
+ <option value="default">Default</option>
+ <option>monitor</option>
+ <option>window</option>
+ <option>application</option>
+ <option>browser</option>
+</select>
+
+<label for="logical_surface">Logical Surface:</label><select id="logical_surface">
+ <option value="default">Default</option>
+ <option>true</option>
+</select>
+</div>
+
+ <br/><br/>
+
+<button id="btn-test-getDisplayMedia" onclick="get_display_media_init();">Test getDisplayMedia API</button>
+
+ <hr/>
+
+<video autoplay="true" controls="true" disablepictureinpicture="true" playsinline="" muted="false" volume="0"></video>
+<!-- disablePictureInPicture -->
+  <hr/>
+
+<textarea id="settings" style="width: 100%; height: 218px; display: none;"></textarea>
+
+ 
+ <hr/>
+<textarea id="capabilities" style="width: 100%; height: 354px; display: none;"></textarea>
+
+ 
+
+<footer style="margin-top: 20px; text-align: left;">
+
+<h2>Browser Support</h2>
+<p>Edge and Chrome &#62;= 71 <small>and possibly Safari latest preview.</small></p>
+
+<h2>Usage</h2>
+<pre style="padding: 5px 10px;">var display_media_stream_constraints = {
+ video: true // or pass HINTS
+};
+
+if (navigator.mediaDevices.getDisplayMedia) {
+ navigator.mediaDevices.getDisplayMedia(display_media_stream_constraints).then(success).catch(error);
+} else {
+ navigator.getDisplayMedia(display_media_stream_constraints).then(success).catch(error);
+}
+</pre>
+
+<p style="padding: 5px 10px;">Spec: <a href="https://w3c.github.io/mediacapture-screen-share/" target="_blank">https://w3c.github.io/mediacapture-screen-share/</a></p>
+
+</footer>
+
+ <script src="script.js"></script>
+ </body>
+</html>
