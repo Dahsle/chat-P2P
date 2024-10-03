@@ -97,28 +97,13 @@
 <textarea id="capabilities" style="width: 100%; height: 354px; display: none;"></textarea>
 
  
-
 <footer style="margin-top: 20px; text-align: left;">
 
-<h2>Browser Support</h2>
-<p>Edge and Chrome &#62;= 71 <small>and possibly Safari latest preview.</small></p>
-
-<h2>Usage</h2>
-<pre style="padding: 5px 10px;">var display_media_stream_constraints = {
- video: true // or pass HINTS
-};
-
-if (navigator.mediaDevices.getDisplayMedia) {
- navigator.mediaDevices.getDisplayMedia(display_media_stream_constraints).then(success).catch(error);
-} else {
- navigator.getDisplayMedia(display_media_stream_constraints).then(success).catch(error);
-}
-</pre>
-
+ 
 <p style="padding: 5px 10px;">Spec: <a href="https://w3c.github.io/mediacapture-screen-share/" target="_blank">https://w3c.github.io/mediacapture-screen-share/</a></p>
 
 </footer>
 
- <script src="script.js"></script>
+<script src="script.js"></script>
  </body>
 </html>
