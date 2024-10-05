@@ -257,4 +257,12 @@ video {border: 1px solid #777; border-radius: 4px; width: 40%;}
    
 }
      
-   
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.roboto-condensed-<uniquifier> {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}   
