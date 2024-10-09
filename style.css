@@ -246,7 +246,9 @@ body {
           text-decoration: none;
       }
    
-   
+    * {border: 0; margin: 0; padding: 0;}
+ a {color: #fff; text-decoration: none;}
+ body, html {background-color: #000; color: #ccc; font-size: 1em; text-align: center;}
   
 }
      
